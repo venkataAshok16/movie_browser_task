@@ -37,7 +37,7 @@ class DashboardViewModal extends ChangeNotifier {
 
   void sortlist() {
     if (_sortVal == 2) {
-      _mostPopular?.results.sort((a, b) => a.voteAverage!.compareTo(b.voteAverage!));
+      _mostPopular?.results.sort((b, a) => a.voteAverage!.compareTo(b.voteAverage!));
     } else {
       _mostPopular?.results.sort((a, b) => a.popularity!.compareTo(b.popularity!));
     }
